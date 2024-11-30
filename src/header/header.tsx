@@ -14,9 +14,9 @@ const Header: React.FC = () => {
             placeholder="Buscar productos, marcas y más..."
             className={styles.searchInput}
           />
-          {/* <button className={styles.searchButton}>
+          <button className={styles.searchButton}>
           <img src="../assets/search.png" className={styles.searchImg} alt="Buscar"></img>
-          </button> */}
+          </button>
         </div>
       </div>
       <nav className={styles.navBar}>
