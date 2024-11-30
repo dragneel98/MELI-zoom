@@ -25,7 +25,6 @@
     flex: 1;
     max-width: 600px;
     margin: 0 20px;
-    
   }
   
   .searchInput {
@@ -41,21 +40,12 @@
   .searchButton {
     /* padding: 10px; */
     background-color:  #ffffff;
+    /* width: 25px; */
     cursor: pointer;
     outline: none;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
     border-left: none;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .icon {
-    font-size: 24px;
-    cursor: pointer;
   }
   
   .navBar {

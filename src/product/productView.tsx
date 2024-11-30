@@ -22,7 +22,6 @@ const ProductPage: React.FC<ProductProps> = ({ imageUrl, thumbnails, title, pric
           ))}
         </div>
         <div className={styles.imagePreview}>
-          {/* <img src={imageUrl} alt={title} className={styles.mainImage} /> */}
           <ZoomImage src={imageUrl}></ZoomImage>
         </div>
       </div>
