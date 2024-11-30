@@ -1,0 +1,86 @@
+:root{
+    --color-mercado: #ffe600;
+    --color-grey: #ededed
+}
+.header {
+    background-color: var(--color-mercado);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 10em;
+  }
+  
+  .topBar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px 250px;
+  }
+  
+  .logo h1{
+    font-size: 1em;
+    color: #40426c;
+  }
+  
+  .searchContainer {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    
+  }
+  
+  .searchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+  
+  .searchButton {
+    /* padding: 10px; */
+    background-color:  #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    border-left: none;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navBar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px 250px;
+    font-size: 14px;
+    background-color: #ffe600;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+  }
+  
+  .navLinks li {
+    list-style: none;
+    cursor: pointer;
+    color: #030300;
+    font-weight: 400;
+  }
+  
+  .navLinks li:hover {
+    text-decoration: underline;
+  }
+  

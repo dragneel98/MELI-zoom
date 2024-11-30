@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 200px;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 1em;
+  }
+  
+  .leftColumn {
+    display: flex; 
+  }
+  
+  .thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .imagePreview {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .mainImage {
+    /* max-width: 100%; */
+    /* height: auto; */
+    border-radius: 8px;
+  }
+  
+  .middleColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 36px;
+    font-weight: 350;
+    /* color: #000; */
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .stock {
+    font-size: 18px;
+    color: green;
+  }
+  
+  .buyButton,
+  .addToCartButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .buyButton {
+    background-color: #3483fa;
+    color: white;
+  }
+  
+  .addToCartButton {
+    /* background-color: #ffd500; */
+    background-color: #c6deff;
+    color: #3483fa;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
