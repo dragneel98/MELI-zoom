@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ProductPage.module.css';
-import ZoomImage from '../zoomImg';
+import ZoomImage from '../zoom/zoomImg';
 
 interface ProductProps {
   imageUrl: string;

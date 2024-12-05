@@ -3,12 +3,11 @@ import styles from './zoomImage.module.css';
 
 interface ZoomImageProps {
   src: string;
-  zoomLevel?: number;
 }
 
 const ZoomImage: React.FC<ZoomImageProps> = ({ src }) => {
   const [isZooming, setIsZooming] = useState(false);
-  const [position, setPosition] = useState<{ x: number; y: number }>({ x: 50, y: 50 });
+  const [position, setPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const zoomLevel = 4;
 
   const handleMouseEnter = () => setIsZooming(true);
@@ -16,11 +15,13 @@ const ZoomImage: React.FC<ZoomImageProps> = ({ src }) => {
   const handleMouseLeave = () => setIsZooming(false);
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+    // recuperamos las propiedades del elemento en el que hacemos zoom
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-
+    
+    //usamos las cordenadas del mouse que son relativas al viewport y hacemos calculos para que sean relativas a la imagen
     let x = ((e.clientX - left) / width) * 100;
     let y = ((e.clientY - top) / height) * 100;
-
+    
     x = Math.max(0, Math.min(x, 100));
     y = Math.max(0, Math.min(y, 100));
 
